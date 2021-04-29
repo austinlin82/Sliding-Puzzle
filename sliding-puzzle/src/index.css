@@ -11,3 +11,24 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.App {
+  display: grid;
+  place-items: center;
+  height: 100vh;
+}
+
+App.board {
+  position: relative;
+  padding: 0;
+  margin: 0 auto;
+}
+
+App.tile {
+  position: absolute;
+  list-style: none;
+  background: "red";
+  display: grid;
+  place-items: center;
+  font-size: 20px;
+}

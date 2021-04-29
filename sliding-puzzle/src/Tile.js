@@ -14,7 +14,7 @@ function Tile(props) {
     };
 
     return (
-        <li
+        <div
             style={{
                 width: tileStyle.width,
                 height: tileStyle.height,
@@ -25,7 +25,7 @@ function Tile(props) {
             onClick {...() => handleTileClick(index)}
         >
             {tile + 1}
-        </li>
+        </div>
     )
 }
 
