@@ -1,28 +1,13 @@
-import React, { useState } from 'react';
-import { render } from 'react-dom';
-import { Stage, Layer, Rect, Text } from 'react-konva';
-import './App.css';
+import React from 'react';
+import Board from "./Board";
+
 
 function App() {
-
   return (
-    <Stage width={window.innerWidth} height = {window.innerHeight}>
-      <Layer>
-        <Rect
-          x={20}
-          y = {50}
-          width = {100}
-          height = {100}
-          fill="blue"
-        />
-        <Text
-          x="70"
-          y= "120"
-          fill="white">
-            Hello
-        </Text>
-      </Layer>
-    </Stage>
+    <div className="App">
+      <h1>sliding game</h1>
+      <Board />
+    </div>
   );
 }
 
